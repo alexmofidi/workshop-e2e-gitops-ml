@@ -6,13 +6,13 @@ data_split:
     - REGION_1
 
 train:
-  valid_pct: 0.1
+  valid_pct: 0.2
   arch: shufflenet_v2_x2_0
   img_size: 256
-  batch_size: 8
+  batch_size: 10
   fine_tune_args:
-    epochs: 8
-    base_lr: 0.05
+    epochs: 2
+    base_lr: 0.04
 
 evaluate:
   n_samples_to_save: 10
